@@ -45,15 +45,11 @@ O principal objetivo da página é apresentar a Planet Music de forma profission
 
 ## Processo de desenvolvimento
 
-O desenvolvimento do projeto ocorreu em etapas.
+Inicialmente realizamos uma análise da Planet Music para identificar suas necessidades de divulgação e comunicação com os clientes. Após o diagnóstico, definimos quais informações seriam mais importantes para o público-alvo.
 
-Inicialmente foi realizada a análise da necessidade da empresa e definido o público-alvo. Em seguida foi elaborado um planejamento das seções que fariam parte do site.
+Em seguida, elaboramos a estrutura da página utilizando HTML semântico e organizamos as seções do site. Posteriormente, desenvolvemos a identidade visual utilizando CSS e implementamos a responsividade com Bootstrap e Media Queries.
 
-Após essa etapa foi criada a estrutura HTML utilizando elementos semânticos. Em seguida foi desenvolvida a estilização com CSS, buscando criar uma identidade visual moderna e agradável.
-
-Posteriormente foram implementadas a responsividade utilizando Media Queries e Bootstrap, permitindo que a página funcionasse corretamente em computadores, tablets e celulares.
-
-Por fim, foi adicionada uma funcionalidade em JavaScript para melhorar a experiência do usuário e realizados testes em diferentes tamanhos de tela antes da publicação no GitHub Pages.
+Após a construção da interface, adicionamos funcionalidades em JavaScript para melhorar a experiência do usuário. Por fim, realizamos testes em diferentes tamanhos de tela, verificamos os links, imagens e o funcionamento geral do site antes da publicação no GitHub Pages.
 
 ---
 
@@ -99,21 +95,18 @@ Seu uso facilitou a adaptação da página para diferentes resoluções sem subs
 
 ---
 
-# Testes realizados
+## Testes realizados
 
-Foram realizados diversos testes durante o desenvolvimento do projeto, incluindo:
+Foram realizados testes em diferentes tamanhos de tela utilizando as ferramentas de desenvolvedor do navegador para verificar a responsividade.
 
-- funcionamento da página em computadores, tablets e celulares;
-- testes utilizando o modo responsivo do Google Chrome;
-- verificação do carregamento correto das imagens;
-- funcionamento dos links internos da navegação;
-- funcionamento do menu desenvolvido em JavaScript;
-- navegação utilizando a tecla TAB;
-- verificação dos textos alternativos das imagens;
-- conferência da publicação no GitHub Pages.
-
-Todos os testes apresentaram resultados satisfatórios.
-
+Também foram testados:
+- Funcionamento do menu hambúrguer;
+- Exibição da mensagem de confirmação do formulário;
+- Carregamento correto das imagens;
+- Navegação pelos links internos;
+- Legibilidade dos textos em dispositivos móveis;
+- Navegação básica por teclado;
+- Funcionamento do site após a publicação no GitHub Pages.
 ---
 
 # Links
