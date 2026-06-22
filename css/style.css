@@ -1,0 +1,468 @@
+body {
+    background-color: #ffffff71;
+    font-family: sans-serif;
+}
+
+
+
+header {
+    background-color: black;
+    color:#ffffff;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    letter-spacing: 0.6px;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header img {
+    width: 100px;
+    padding-left: 40px;
+    transform: scale(1.1);
+    transform-origin: left center;
+}
+
+/* Botão hambúrguer - escondido em telas grandes */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-right: 30px;
+    z-index: 10;
+}
+
+.menu-toggle span {
+    width: 28px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Anima o ícone para um "X" quando o menu está aberto */
+.menu-toggle.ativo span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.menu-toggle.ativo span:nth-child(2) {
+    opacity: 0;
+}
+.menu-toggle.ativo span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Acessibilidade: foco visível por teclado em links e botões */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-right: 50px;
+    font-size: 15px;
+}
+
+header nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.4s ease;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+.quem-somos {
+    text-align: center;
+    padding: 20px 30%;
+    font-family: sans-serif;
+}
+
+.quem-somos h2 {
+    font-size: 35px;
+    padding-bottom: 10px;
+    margin-top: -5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.texto {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.7px;
+    margin-top: -10px;
+    border-radius: 15px;
+    line-height: 30px;
+}
+
+.encima {
+    color:rgba(0, 0, 0, 0.603);
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.produtos {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 35px;
+    padding-bottom: 10px;
+    margin-top: -5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.produto-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+}
+
+.produto-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.produto-card .card-text {
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 10px 0;
+}
+
+.cta-btn {
+    display: block;
+    width: fit-content;
+    margin: 40px auto 0;
+    padding: 14px 32px;
+    background-color: black;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #333333;
+}
+
+.contato h3 {
+    font-size: 35px;
+    padding-bottom: 10px;
+    margin-top: -5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.endereco {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.7px;
+    margin-top: -10px;
+    border-radius: 15px;
+    line-height: 30px;
+}
+
+.rodape {
+    margin-top: 50px;
+    text-align: center;
+    background-color: black;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+/* ===================== RESPONSIVIDADE ===================== */
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    header nav {
+        width: 100%;
+        order: 3;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+    }
+
+    /* Classe alternada via JS para abrir o menu */
+    header nav ul.menu-aberto {
+        max-height: 300px;
+        padding: 15px 0;
+    }
+
+    header nav ul li {
+        padding: 10px 0;
+    }
+
+    header h1 {
+        position: static;
+        transform: none;
+        font-size: 28px;
+        order: 2;
+        margin: 5px 0;
+    }
+
+    header img {
+        width: 60px;
+        padding-left: 20px;
+    }
+
+    .quem-somos {
+        padding: 20px 8%;
+    }
+
+    .quem-somos h2,
+    .produtos h2,
+    .contato h3 {
+        font-size: 26px;
+    }
+
+    .texto,
+    .endereco {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    .produto-card img {
+        height: 220px;
+    }
+}
+
+/* ===================== HERO / BANNER ===================== */
+
+.hero {
+position: relative;
+text-align: center;
+overflow: hidden;
+}
+
+.hero img {
+width: 100%;
+height: 500px;
+object-fit: cover;
+}
+
+.hero-texto {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #ffffff;
+width: 90%;
+}
+
+.hero-texto h2 {
+font-size: 48px;
+font-weight: 700;
+text-transform: uppercase;
+text-shadow: 2px 2px 10px rgba(0,0,0,.8);
+}
+
+.hero-texto p {
+font-size: 20px;
+margin: 15px 0;
+text-shadow: 1px 1px 8px rgba(0,0,0,.8);
+}
+
+/* ===================== DIFERENCIAIS ===================== */
+
+.diferenciais {
+padding: 60px 10%;
+text-align: center;
+}
+
+.diferenciais h2 {
+font-size: 35px;
+margin-bottom: 40px;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+.diferenciais-grid {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 25px;
+}
+
+.diferencial-card {
+background: #ffffff;
+width: 320px;
+padding: 25px;
+border-radius: 15px;
+box-shadow: 0 2px 10px rgba(0,0,0,.12);
+transition: transform .3s ease;
+}
+
+.diferencial-card:hover {
+transform: translateY(-5px);
+}
+
+.diferencial-card h3 {
+margin-bottom: 15px;
+font-size: 22px;
+}
+
+.diferencial-card p {
+line-height: 1.6;
+}
+
+/* ===================== FORMULÁRIO ===================== */
+
+#formContato {
+max-width: 650px;
+margin: 30px auto;
+padding: 0 20px;
+}
+
+#formContato input,
+#formContato textarea {
+width: 100%;
+padding: 14px;
+margin-bottom: 15px;
+border: 1px solid #cccccc;
+border-radius: 10px;
+font-size: 16px;
+}
+
+#formContato textarea {
+resize: vertical;
+}
+
+#formContato button {
+background-color: black;
+color: white;
+border: none;
+padding: 14px 30px;
+border-radius: 30px;
+font-weight: 600;
+cursor: pointer;
+transition: background-color .3s ease;
+}
+
+#formContato button:hover {
+background-color: #333333;
+}
+
+/* ===================== MELHORIAS FINAIS ===================== */
+
+/* Rolagem suave entre seções */
+html {
+scroll-behavior: smooth;
+}
+
+/* Fundo mais elegante */
+body {
+background-color: #f5f5f5;
+}
+
+/* Descrição dos produtos */
+.produto-card small {
+display: block;
+color: #666;
+font-size: 14px;
+margin-top: 5px;
+padding: 0 10px 10px;
+}
+
+/* Melhor foco para acessibilidade */
+#formContato input:focus,
+#formContato textarea:focus {
+outline: none;
+border-color: #000;
+box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+/* Área de contato */
+.contato {
+padding: 60px 10%;
+}
+
+/* Mensagem de sucesso do formulário */
+#mensagemSucesso {
+text-align: center;
+font-weight: bold;
+color: green;
+margin-top: 15px;
+min-height: 24px;
+}
