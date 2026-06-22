@@ -42,8 +42,8 @@ Grid system (container/row/col) na seção "Nossos produtos", tornando os cards 
 - Verificação do funcionamento após publicação.
 
 ## Links
-- Link do repositório:
-- Link do site publicado:
+- Link do repositório: https://github.com/pedros1611/planet-music
+- Link do site publicado: https://pedros1611.github.io/planet-music/
 
 ## Contribuição dos integrantes
 Pedro Henrique Soares Bezerra:
