@@ -7,13 +7,13 @@
 
 ---
 
-# Descrição do caso escolhido
+## Descrição do caso escolhido
 
 O projeto foi desenvolvido para a Planet Music, uma loja especializada na venda de instrumentos musicais e acessórios. A proposta foi criar um site institucional moderno, organizado e responsivo, permitindo que clientes conheçam a loja, seus principais produtos e encontrem facilmente formas de contato.
 
 ---
 
-# Necessidade identificada
+## Necessidade identificada
 
 A Planet Music não possuía uma presença digital organizada para apresentar seus produtos e facilitar o contato com novos clientes. Atualmente, muitas pessoas procuram informações sobre lojas pela internet antes de realizar uma compra, tornando essencial a existência de um site que transmita credibilidade e profissionalismo.
 
@@ -21,7 +21,7 @@ Diante dessa necessidade, foi desenvolvido um site simples, intuitivo e acessív
 
 ---
 
-# Público-alvo
+## Público-alvo
 
 O site foi pensado para atender:
 
@@ -37,13 +37,13 @@ Esses usuários precisam encontrar rapidamente informações sobre os produtos o
 
 ---
 
-# Objetivo do site
+## Objetivo do site
 
 O principal objetivo da página é apresentar a Planet Music de forma profissional, permitindo que os visitantes conheçam a loja, visualizem seus principais produtos e sejam incentivados a entrar em contato para solicitar informações ou realizar um orçamento.
 
 ---
 
-# Processo de desenvolvimento
+## Processo de desenvolvimento
 
 O desenvolvimento do projeto ocorreu em etapas.
 
